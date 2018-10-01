@@ -44,7 +44,7 @@ public class FabricPlugin extends CordovaPlugin {
 
 	@Override
 	public boolean execute(final String action, final JSONArray data, final CallbackContext callbackContext) {
-		Log.d(pluginName, pluginName + " called with options: " + data);
+		Log.d(pluginName, pluginName + " " + action + " called with options: " + data);
 
 		if (action.equals("addLog")) {
 			addLog(data, callbackContext);
